@@ -1,4 +1,3 @@
-
 import os, glob, time
 
 path = 'C:\Users\sures\Desktop' 
@@ -21,7 +20,7 @@ print [file_name, file_date][0]
 ##print [file_name, file_date][0]
 f = open(os.path.join(path,file_name))
 data = f.read()
-print data
+print (data)
 f.close()
 
 
