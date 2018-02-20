@@ -1,6 +1,6 @@
 import os, glob, time
 
-path = 'C:\Users\sures\Desktop' 
+path = 'C:/Users/sures/Desktop/All'
 
 date_file_list = []
 for folder in glob.glob(path):    
@@ -15,7 +15,7 @@ date_file_list.sort()
 for file in date_file_list:   
     folder, file_name = os.path.split(file[1])   
     file_date = time.strftime("%m/%d/%y %H:%M:%S", file[0])
-print [file_name, file_date][0]
+
 
 ##print [file_name, file_date][0]
 f = open(os.path.join(path,file_name))
